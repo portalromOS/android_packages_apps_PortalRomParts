@@ -1,19 +1,19 @@
 # Keep all Fragments in this package, which are used by reflection.
--keep class org.lineageos.lineageparts.*Fragment
--keep class org.lineageos.lineageparts.*Picker
--keep class org.lineageos.lineageparts.*Settings
+-keep class org.portalrom.portalromparts.*Fragment
+-keep class org.portalrom.portalromparts.*Picker
+-keep class org.portalrom.portalromparts.*Settings
 
--keep class org.lineageos.lineageparts.contributors.*
--keep class org.lineageos.lineageparts.gestures.*
--keep class org.lineageos.lineageparts.hardware.*
--keep class org.lineageos.lineageparts.input.*
--keep class org.lineageos.lineageparts.lineagestats.*
--keep class org.lineageos.lineageparts.livedisplay.*
--keep class org.lineageos.lineageparts.notificationlight.*
--keep class org.lineageos.lineageparts.power.*
--keep class org.lineageos.lineageparts.privacyguard.*
--keep class org.lineageos.lineageparts.profiles.*
--keep class org.lineageos.lineageparts.sounds.*
+-keep class org.portalrom.portalromparts.contributors.*
+-keep class org.portalrom.portalromparts.gestures.*
+-keep class org.portalrom.portalromparts.hardware.*
+-keep class org.portalrom.portalromparts.input.*
+-keep class org.portalrom.portalromparts.lineagestats.*
+-keep class org.portalrom.portalromparts.livedisplay.*
+-keep class org.portalrom.portalromparts.notificationlight.*
+-keep class org.portalrom.portalromparts.power.*
+-keep class org.portalrom.portalromparts.privacyguard.*
+-keep class org.portalrom.portalromparts.profiles.*
+-keep class org.portalrom.portalromparts.sounds.*
 
 # Keep keyhandler constructor
 -keep public class * implements com.android.internal.os.DeviceKeyHandler {
