@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.portalrom.portalromparts.lineagestats;
+package org.portalrom.portalromparts.portalromstats;
 
 import android.content.Context;
 import android.os.Build;
@@ -74,11 +74,11 @@ public class Utilities {
     }
 
     public static String getDevice() {
-        return SystemProperties.get("ro.lineage.device", Build.PRODUCT);
+        return SystemProperties.get("ro.portalrom.device", Build.PRODUCT);
     }
 
     public static String getModVersion() {
-        return SystemProperties.get("ro.lineage.version", Build.DISPLAY);
+        return SystemProperties.get("ro.portalrom.version", Build.DISPLAY);
     }
 
     public static String digest(String input) {

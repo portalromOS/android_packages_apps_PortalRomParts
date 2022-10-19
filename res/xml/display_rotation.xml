@@ -18,7 +18,7 @@
 
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:lineage="http://schemas.android.com/apk/res/portalrom.platform"
+        xmlns:portalrom="http://schemas.android.com/apk/res/portalrom.platform"
         android:key="rotation"
         android:title="@string/display_rotation_title">
 
@@ -31,7 +31,7 @@
         android:title="@string/display_lockscreen_rotation_title"
         android:dependency="accelerometer"
         android:defaultValue="false"
-        lineage:requiresConfig="@*android:bool/config_enableLockScreenRotation" />
+        portalrom:requiresConfig="@*android:bool/config_enableLockScreenRotation" />
 
     <PreferenceCategory
         android:key="display_rotation_category"

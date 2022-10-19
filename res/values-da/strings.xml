@@ -16,7 +16,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">PortalRom Indstillinger</string>
+    <string name="portalromparts_title">PortalRom Indstillinger</string>
     <string name="loading">Indlæser\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">Annuller</string>

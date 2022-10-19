@@ -16,7 +16,7 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <org.portalrom.lineageparts.widget.WallOfTextPreference
+    <org.portalrom.portalromparts.widget.WallOfTextPreference
         android:icon="@drawable/ic_trust"
         android:summary="@string/trust_onboarding_description" />
 
@@ -47,8 +47,8 @@
             android:entryValues="@array/trust_restrict_usb_values"
             android:defaultValue="0" />
 
-        <org.portalrom.internal.lineageparts.PortalRomPartsPreference
-            android:key="lineagestats" />
+        <org.portalrom.internal.portalromparts.PortalRomPartsPreference
+            android:key="portalromstats" />
 
         <ListPreference
             android:key="sms_security_check_limit"
@@ -63,7 +63,7 @@
         android:key="trust_category_warnings"
         android:title="@string/trust_notification_alerts_title">
 
-        <org.portalrom.lineageparts.widget.WallOfTextPreference
+        <org.portalrom.portalromparts.widget.WallOfTextPreference
             android:icon="@drawable/ic_info"
             android:summary="@string/trust_warnings_alerts_intro" />
 

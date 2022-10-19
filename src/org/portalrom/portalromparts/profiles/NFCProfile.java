@@ -35,7 +35,7 @@ import portalrom.providers.PortalRomSettings;
 import org.portalrom.portalromparts.R;
 
 /**
- * This activity handles NDEF_DISCOVERED intents with the "lineage/profile" mime type.
+ * This activity handles NDEF_DISCOVERED intents with the "portalrom/profile" mime type.
  * Tags should be encoded with the 16-byte UUID of the profile to be activated.
  * Tapping a tag while that profile is already active will select the previously
  * active profile.
@@ -46,7 +46,7 @@ public class NFCProfile extends Activity {
 
     private static final String PREFS_PREVIOUS_PROFILE = "previous-profile";
 
-    static final String PROFILE_MIME_TYPE = "lineage/profile";
+    static final String PROFILE_MIME_TYPE = "portalrom/profile";
 
     private ProfileManager mProfileManager;
 

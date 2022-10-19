@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.portalrom.portalromparts.lineagestats;
+package org.portalrom.portalromparts.portalromstats;
 
 import android.app.job.JobParameters;
 import android.app.job.JobService;
@@ -153,7 +153,7 @@ public class StatsUploadJobService extends JobService {
     }
 
     private boolean uploadToPortalRom(JSONObject json) throws IOException {
-        final Uri uri = Uri.parse(getString(R.string.stats_lineage_url));
+        final Uri uri = Uri.parse(getString(R.string.stats_portalrom_url));
         URL url = new URL(uri.toString());
         HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
         try {
@@ -167,7 +167,7 @@ public class StatsUploadJobService extends JobService {
             os.close();
 
             final int responseCode = urlConnection.getResponseCode();
-            if (DEBUG) Log.d(TAG, "lineage server response code=" + responseCode);
+            if (DEBUG) Log.d(TAG, "portalrom server response code=" + responseCode);
             final boolean success = responseCode == HttpURLConnection.HTTP_OK;
             if (!success) {
                 Log.w(TAG, "failed sending, server returned: " + getResponse(urlConnection));

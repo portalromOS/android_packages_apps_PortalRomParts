@@ -7,7 +7,7 @@
 -keep class org.portalrom.portalromparts.gestures.*
 -keep class org.portalrom.portalromparts.hardware.*
 -keep class org.portalrom.portalromparts.input.*
--keep class org.portalrom.portalromparts.lineagestats.*
+-keep class org.portalrom.portalromparts.portalromstats.*
 -keep class org.portalrom.portalromparts.livedisplay.*
 -keep class org.portalrom.portalromparts.notificationlight.*
 -keep class org.portalrom.portalromparts.power.*

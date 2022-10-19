@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.portalrom.portalromparts.lineagestats;
+package org.portalrom.portalromparts.portalromstats;
 
 import android.app.IntentService;
 import android.app.job.JobInfo;
@@ -46,35 +46,35 @@ public class ReportingService extends IntentService {
         String deviceCarrier = Utilities.getCarrier(context);
         String deviceCarrierId = Utilities.getCarrierId(context);
 
-        final int lineageOldJobId = AnonymousStats.getLastJobId(context);
-        final int lineageOrgJobId = AnonymousStats.getNextJobId(context);
+        final int portalromOldJobId = AnonymousStats.getLastJobId(context);
+        final int portalromOrgJobId = AnonymousStats.getNextJobId(context);
 
-        if (DEBUG) Log.d(TAG, "scheduling job id: " + lineageOrgJobId);
+        if (DEBUG) Log.d(TAG, "scheduling job id: " + portalromOrgJobId);
 
-        PersistableBundle lineageBundle = new PersistableBundle();
-        lineageBundle.putString(StatsUploadJobService.KEY_DEVICE_NAME, deviceName);
-        lineageBundle.putString(StatsUploadJobService.KEY_UNIQUE_ID, deviceId);
-        lineageBundle.putString(StatsUploadJobService.KEY_VERSION, deviceVersion);
-        lineageBundle.putString(StatsUploadJobService.KEY_COUNTRY, deviceCountry);
-        lineageBundle.putString(StatsUploadJobService.KEY_CARRIER, deviceCarrier);
-        lineageBundle.putString(StatsUploadJobService.KEY_CARRIER_ID, deviceCarrierId);
-        lineageBundle.putLong(StatsUploadJobService.KEY_TIMESTAMP, System.currentTimeMillis());
+        PersistableBundle portalromBundle = new PersistableBundle();
+        portalromBundle.putString(StatsUploadJobService.KEY_DEVICE_NAME, deviceName);
+        portalromBundle.putString(StatsUploadJobService.KEY_UNIQUE_ID, deviceId);
+        portalromBundle.putString(StatsUploadJobService.KEY_VERSION, deviceVersion);
+        portalromBundle.putString(StatsUploadJobService.KEY_COUNTRY, deviceCountry);
+        portalromBundle.putString(StatsUploadJobService.KEY_CARRIER, deviceCarrier);
+        portalromBundle.putString(StatsUploadJobService.KEY_CARRIER_ID, deviceCarrierId);
+        portalromBundle.putLong(StatsUploadJobService.KEY_TIMESTAMP, System.currentTimeMillis());
 
         // set job types
-        lineageBundle.putInt(StatsUploadJobService.KEY_JOB_TYPE,
+        portalromBundle.putInt(StatsUploadJobService.KEY_JOB_TYPE,
                 StatsUploadJobService.JOB_TYPE_LINEAGEORG);
 
-        // schedule lineage stats upload
-        js.schedule(new JobInfo.Builder(lineageOrgJobId, new ComponentName(getPackageName(),
+        // schedule portalrom stats upload
+        js.schedule(new JobInfo.Builder(portalromOrgJobId, new ComponentName(getPackageName(),
                 StatsUploadJobService.class.getName()))
                 .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
                 .setMinimumLatency(1000)
-                .setExtras(lineageBundle)
+                .setExtras(portalromBundle)
                 .setPersisted(true)
                 .build());
 
         // cancel old job in case it didn't run yet
-        js.cancel(lineageOldJobId);
+        js.cancel(portalromOldJobId);
 
         // reschedule
         AnonymousStats.updateLastSynced(this);

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.portalrom.lineageparts.search;
+package org.portalrom.portalromparts.search;
 
 import android.content.Context;
 import android.provider.SearchIndexableData;

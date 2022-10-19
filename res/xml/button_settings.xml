@@ -17,7 +17,7 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:lineage="http://schemas.android.com/apk/res/portalrom.platform"
+        xmlns:portalrom="http://schemas.android.com/apk/res/portalrom.platform"
         android:key="button_settings"
         android:title="@string/button_pref_title">
 
@@ -33,7 +33,7 @@
         android:summary="@string/swap_capacitive_keys_summary"
         android:defaultValue="false" />
 
-    <org.portalrom.lineageparts.input.ButtonBacklightBrightness
+    <org.portalrom.portalromparts.input.ButtonBacklightBrightness
         android:key="button_backlight"
         android:title="@string/button_backlight_title"
         android:dialogTitle="@string/button_backlight_title"
@@ -108,7 +108,7 @@
         <Preference
             android:key="power_menu"
             android:title="@string/power_menu_title"
-            android:fragment="org.portalrom.lineageparts.input.PowerMenuActions" />
+            android:fragment="org.portalrom.portalromparts.input.PowerMenuActions" />
 
         <SwitchPreference
             android:key="power_end_call"
@@ -121,7 +121,7 @@
             android:title="@string/torch_long_press_power_gesture_title"
             android:summary="@string/torch_long_press_power_gesture_desc"
             android:defaultValue="false"
-            lineage:requiresConfig="@*android:bool/config_supportLongPressPowerWhenNonInteractive" />
+            portalrom:requiresConfig="@*android:bool/config_supportLongPressPowerWhenNonInteractive" />
 
         <ListPreference
             android:key="torch_long_press_power_timeout"
@@ -337,7 +337,7 @@
         <portalrom.preference.RemotePreference
             android:key="additional_buttons"
             android:title="@string/additional_buttons_title"
-            lineage:requiresAction="org.portalrom.settings.device.ADDITIONAL_BUTTONS_SETTINGS">
+            portalrom:requiresAction="org.portalrom.settings.device.ADDITIONAL_BUTTONS_SETTINGS">
             <intent
                 android:action="org.portalrom.settings.device.ADDITIONAL_BUTTONS_SETTINGS" />
         </portalrom.preference.RemotePreference>

@@ -16,7 +16,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">Configuració de PortalRom</string>
+    <string name="portalromparts_title">Configuració de PortalRom</string>
     <string name="loading">S\'està carregant\u2026</string>
     <string name="dlg_ok">D\'ACORD</string>
     <string name="cancel">Cancel·la</string>

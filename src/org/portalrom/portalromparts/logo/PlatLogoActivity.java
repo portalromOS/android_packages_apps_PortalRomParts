@@ -67,7 +67,7 @@ public class PlatLogoActivity extends Activity {
         public PBackground(Context context) {
             randomizePalette();
             // PortalRomOS logo
-            mLogo = context.getResources().getDrawable(R.drawable.logo_lineage, context.getTheme());
+            mLogo = context.getResources().getDrawable(R.drawable.logo_portalrom, context.getTheme());
             mLogo.setColorFilter(new ColorMatrixColorFilter(WHITE)); // apply color filter
             mLogo.setBounds(0, 0, 360, 180); // Aspect ratio 2:1
         }

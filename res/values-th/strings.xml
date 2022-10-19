@@ -16,7 +16,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">การตั้งค่า PortalRom</string>
+    <string name="portalromparts_title">การตั้งค่า PortalRom</string>
     <string name="loading">กำลังโหลด\u2026</string>
     <string name="dlg_ok">ตกลง</string>
     <string name="cancel">ยกเลิก</string>

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.portalrom.portalromparts.lineagestats;
+package org.portalrom.portalromparts.portalromstats;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
