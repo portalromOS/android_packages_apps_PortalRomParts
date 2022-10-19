@@ -58,7 +58,7 @@ import static android.provider.SearchIndexablesContract.COLUMN_INDEX_XML_RES_RES
 import static android.provider.SearchIndexablesContract.INDEXABLES_RAW_COLUMNS;
 import static android.provider.SearchIndexablesContract.INDEXABLES_XML_RES_COLUMNS;
 import static android.provider.SearchIndexablesContract.NON_INDEXABLES_KEYS_COLUMNS;
-import static org.portalrom.internal.portalromparts.PartsList.LINEAGEPARTS_ACTIVITY;
+import static org.portalrom.internal.portalromparts.PartsList.PORTALROMPARTS_ACTIVITY;
 
 /**
  * Provides search metadata to the Settings app
@@ -89,9 +89,9 @@ public class PortalRomPartsSearchIndexablesProvider extends SearchIndexablesProv
             ref[COLUMN_INDEX_XML_RES_CLASS_NAME] = null;
             ref[COLUMN_INDEX_XML_RES_ICON_RESID] = R.drawable.ic_launcher_portalrom;
             ref[COLUMN_INDEX_XML_RES_INTENT_ACTION] = i.getAction();
-            ref[COLUMN_INDEX_XML_RES_INTENT_TARGET_PACKAGE] = LINEAGEPARTS_ACTIVITY.
+            ref[COLUMN_INDEX_XML_RES_INTENT_TARGET_PACKAGE] = PORTALROMPARTS_ACTIVITY.
                     getPackageName();
-            ref[COLUMN_INDEX_XML_RES_INTENT_TARGET_CLASS] = LINEAGEPARTS_ACTIVITY.getClassName();
+            ref[COLUMN_INDEX_XML_RES_INTENT_TARGET_CLASS] = PORTALROMPARTS_ACTIVITY.getClassName();
             cursor.addRow(ref);
         }
         return cursor;
@@ -145,9 +145,9 @@ public class PortalRomPartsSearchIndexablesProvider extends SearchIndexablesProv
                 ref[COLUMN_INDEX_RAW_INTENT_ACTION] = raw.intentAction != null ?
                         raw.intentAction : i.getAction();
                 ref[COLUMN_INDEX_RAW_INTENT_TARGET_PACKAGE] = raw.intentTargetPackage != null ?
-                        raw.intentTargetPackage : LINEAGEPARTS_ACTIVITY.getPackageName();
+                        raw.intentTargetPackage : PORTALROMPARTS_ACTIVITY.getPackageName();
                 ref[COLUMN_INDEX_RAW_INTENT_TARGET_CLASS] = raw.intentTargetClass != null ?
-                        raw.intentTargetClass : LINEAGEPARTS_ACTIVITY.getClassName();
+                        raw.intentTargetClass : PORTALROMPARTS_ACTIVITY.getClassName();
                 ref[COLUMN_INDEX_RAW_KEY] = raw.key != null ?
                         raw.key : i.getName();
                 ref[COLUMN_INDEX_RAW_USER_ID] = -1;

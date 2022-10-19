@@ -188,7 +188,7 @@ public class PartsActivity extends CollapsingToolbarBaseActivity implements
         }
 
         Intent intent = new Intent();
-        intent.setComponent(PartsList.LINEAGEPARTS_ACTIVITY);
+        intent.setComponent(PartsList.PORTALROMPARTS_ACTIVITY);
         intent.putExtra(EXTRA_SHOW_FRAGMENT, fragmentClass);
         intent.putExtra(EXTRA_SHOW_FRAGMENT_ARGUMENTS, args);
         intent.putExtra(EXTRA_SHOW_FRAGMENT_TITLE_RESID, titleRes);

@@ -62,7 +62,7 @@ public class ReportingService extends IntentService {
 
         // set job types
         portalromBundle.putInt(StatsUploadJobService.KEY_JOB_TYPE,
-                StatsUploadJobService.JOB_TYPE_LINEAGEORG);
+                StatsUploadJobService.JOB_TYPE_PORTALROMORG);
 
         // schedule portalrom stats upload
         js.schedule(new JobInfo.Builder(portalromOrgJobId, new ComponentName(getPackageName(),
