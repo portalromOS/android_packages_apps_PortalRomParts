@@ -47,7 +47,7 @@
                 android:key="enable_taskbar"
                 android:title="@string/navigation_bar_enable_taskbar_title" />
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
                 android:key="navigation_bar_menu_arrow_keys"
                 android:title="@string/navigation_bar_arrow_keys_title"
                 android:summary="@string/navigation_bar_arrow_keys_summary"
@@ -116,7 +116,7 @@
             android:summary="@string/power_end_call_summary"
             android:persistent="false"/>
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="torch_long_press_power_gesture"
             android:title="@string/torch_long_press_power_gesture_title"
             android:summary="@string/torch_long_press_power_gesture_desc"
@@ -138,7 +138,7 @@
         android:key="home_key"
         android:title="@string/hardware_keys_home_key_title" >
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="home_wake_screen"
             android:title="@string/button_wake_title"
             android:defaultValue="true" />
@@ -171,7 +171,7 @@
         android:key="back_key"
         android:title="@string/hardware_keys_back_key_title" >
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="back_wake_screen"
             android:title="@string/button_wake_title"
             android:defaultValue="false" />
@@ -190,7 +190,7 @@
         android:key="menu_key"
         android:title="@string/hardware_keys_menu_key_title" >
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="menu_wake_screen"
             android:title="@string/button_wake_title"
             android:defaultValue="false" />
@@ -217,7 +217,7 @@
         android:key="assist_key"
         android:title="@string/hardware_keys_assist_key_title" >
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="assist_wake_screen"
             android:title="@string/button_wake_title"
             android:defaultValue="false" />
@@ -244,7 +244,7 @@
         android:key="app_switch_key"
         android:title="@string/hardware_keys_appswitch_key_title" >
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="app_switch_wake_screen"
             android:title="@string/button_wake_title"
             android:defaultValue="false" />
@@ -271,18 +271,18 @@
         android:key="camera_key"
         android:title="@string/hardware_keys_camera_key_title">
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="camera_wake_screen"
             android:title="@string/button_wake_title"
             android:defaultValue="false" />
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="camera_sleep_on_release"
             android:title="@string/camera_sleep_on_release_title"
             android:summary="@string/camera_sleep_on_release_summary"
             android:defaultValue="false" />
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="camera_launch"
             android:title="@string/camera_launch_title"
             android:summary="@string/camera_launch_summary"
@@ -294,18 +294,18 @@
         android:key="volume_keys"
         android:title="@string/hardware_keys_volume_keys_title" >
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="volume_wake_screen"
             android:title="@string/button_wake_title"
             android:defaultValue="false" />
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="volume_answer_call"
             android:title="@string/volume_answer_call_title"
             android:summary="@string/volume_answer_call_summary"
             android:defaultValue="false" />
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="volbtn_music_controls"
             android:title="@string/volbtn_music_controls_title"
             android:summary="@string/volbtn_music_controls_summary"
@@ -342,7 +342,7 @@
                 android:action="org.lineageos.settings.device.ADDITIONAL_BUTTONS_SETTINGS" />
         </lineageos.preference.RemotePreference>
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="click_partial_screenshot"
             android:title="@string/click_partial_screenshot_title"
             android:summary="@string/click_partial_screenshot_summary"

@@ -28,7 +28,7 @@
         android:key="general_section"
         android:title="@string/notification_light_general_title">
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="notification_light_color_auto"
             android:title="@string/notification_light_automagic"
             android:dependency="notification_light_pulse"
@@ -63,12 +63,12 @@
         android:key="advanced_section"
         android:title="@string/advanced">
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="notification_light_screen_on_enable"
             android:title="@string/notification_light_screen_on"
             android:dependency="notification_light_pulse" />
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
+        <lineageos.preference.PortalRomSystemSettingSwitchPreference
             android:key="notification_light_pulse_custom_enable"
             android:title="@string/notification_light_use_custom"
             android:dependency="notification_light_pulse" />

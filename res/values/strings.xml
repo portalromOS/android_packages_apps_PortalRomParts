@@ -533,7 +533,7 @@
                  <b>Total commits:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Last update:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
 
-    <!-- Anonymous Statistics #Lineage -->
+    <!-- Anonymous Statistics #PortalRom -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">PortalRom statistics</string>
     <string name="anonymous_statistics_summary">Help make PortalRom better by opting into anonymous statistics reporting</string>

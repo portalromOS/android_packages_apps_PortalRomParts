@@ -18,9 +18,9 @@
 
 <!--
      The parts catalog is used to locate items (usually a PreferenceScreen) inside
-     of LineageParts. This can be used by LineagePartsPreference to create a simple, two-line
+     of PortalRomParts. This can be used by PortalRomPartsPreference to create a simple, two-line
      entry point from Settings or another application. All entries should specify
-     a fragment, which is a SettingsPreferenceFragment subclass inside LineageParts.
+     a fragment, which is a SettingsPreferenceFragment subclass inside PortalRomParts.
 
      Metadata for the search index provider should be provided for all parts. This
      can be supplied an XML resource in the "lineage:xmlRes" attribute or by implementing

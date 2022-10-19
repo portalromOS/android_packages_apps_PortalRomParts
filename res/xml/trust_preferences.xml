@@ -39,7 +39,7 @@
         android:key="trust_category_tools"
         android:title="@string/trust_category_tools">
 
-        <lineageos.preference.LineageGlobalSettingListPreference
+        <lineageos.preference.PortalRomGlobalSettingListPreference
             android:key="trust_restrict_usb"
             android:title="@string/trust_restrict_usb_title"
             android:summary="@string/trust_restrict_usb_summary"
@@ -47,7 +47,7 @@
             android:entryValues="@array/trust_restrict_usb_values"
             android:defaultValue="0" />
 
-        <org.lineageos.internal.lineageparts.LineagePartsPreference
+        <org.lineageos.internal.lineageparts.PortalRomPartsPreference
             android:key="lineagestats" />
 
         <ListPreference

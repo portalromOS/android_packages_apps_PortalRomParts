@@ -26,7 +26,7 @@
         android:key="accelerometer"
         android:title="@string/accelerometer_title" />
 
-    <lineageos.preference.LineageSystemSettingSwitchPreference
+    <lineageos.preference.PortalRomSystemSettingSwitchPreference
         android:key="lockscreen_rotation"
         android:title="@string/display_lockscreen_rotation_title"
         android:dependency="accelerometer"

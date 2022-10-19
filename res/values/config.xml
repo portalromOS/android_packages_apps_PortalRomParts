@@ -22,7 +22,7 @@
 
     <!-- Default action ids for a device's touchscreen gestures
          The array should be sorted in the same order as the
-         touchscreen gestures advertised by the device's LineageHW impl. -->
+         touchscreen gestures advertised by the device's PortalRomHW impl. -->
     <integer-array name="config_defaultTouchscreenGestureActions" />
 
     <!-- The position of the volume rocker, as opposed to the natural

@@ -26,7 +26,7 @@
         android:summary="%s"
         android:persistent="false" />
 
-    <lineageos.preference.LineageSecureSettingSwitchPreference
+    <lineageos.preference.PortalRomSecureSettingSwitchPreference
         android:key="network_traffic_autohide"
         android:title="@string/network_traffic_autohide"
         android:summary="@string/network_traffic_autohide_summary"
@@ -40,7 +40,7 @@
         android:summary="%s"
         android:persistent="false" />
 
-    <lineageos.preference.LineageSecureSettingSwitchPreference
+    <lineageos.preference.PortalRomSecureSettingSwitchPreference
         android:key="network_traffic_show_units"
         android:title="@string/network_traffic_show_units"
         android:summary="@string/network_traffic_show_units_summary"
