@@ -18,7 +18,7 @@
 
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
+        xmlns:lineage="http://schemas.android.com/apk/res/portalrom.platform"
         android:key="rotation"
         android:title="@string/display_rotation_title">
 
@@ -26,7 +26,7 @@
         android:key="accelerometer"
         android:title="@string/accelerometer_title" />
 
-    <lineageos.preference.PortalRomSystemSettingSwitchPreference
+    <portalrom.preference.PortalRomSystemSettingSwitchPreference
         android:key="lockscreen_rotation"
         android:title="@string/display_lockscreen_rotation_title"
         android:dependency="accelerometer"

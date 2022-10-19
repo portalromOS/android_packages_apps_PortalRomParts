@@ -17,7 +17,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <org.lineageos.lineageparts.widget.SlidingTabLayout
+    <org.portalrom.lineageparts.widget.SlidingTabLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/sliding_tabs"
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
         android:scrollbars="none"
         android:fillViewport="true" />
 
-    <org.lineageos.lineageparts.widget.RtlCompatibleViewPager
+    <org.portalrom.lineageparts.widget.RtlCompatibleViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

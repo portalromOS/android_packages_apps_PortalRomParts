@@ -17,7 +17,7 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:key="livedisplay"
-        android:title="@*lineageos.platform:string/live_display_title">
+        android:title="@*portalrom.platform:string/live_display_title">
 
     <!-- Color mode preview -->
     <com.android.settingslib.widget.LayoutPreference
@@ -36,28 +36,28 @@
             android:persistent="false" />
 
     <!-- Manual temperature selection -->
-    <org.lineageos.lineageparts.livedisplay.DisplayTemperature
+    <org.portalrom.lineageparts.livedisplay.DisplayTemperature
             android:key="live_display_color_temperature"
             android:title="@string/live_display_color_temperature_title"
-            android:dialogTitle="@*lineageos.platform:string/live_display_title"
+            android:dialogTitle="@*portalrom.platform:string/live_display_title"
             android:persistent="false" />
 
     <!-- Outdoor mode / SRE -->
-    <lineageos.preference.PortalRomSystemSettingSwitchPreference
+    <portalrom.preference.PortalRomSystemSettingSwitchPreference
             android:key="display_auto_outdoor_mode"
             android:title="@string/live_display_outdoor_mode_title"
             android:summary="@string/live_display_outdoor_mode_summary"
-            android:defaultValue="@*lineageos.platform:bool/config_defaultAutoOutdoorMode" />
+            android:defaultValue="@*portalrom.platform:bool/config_defaultAutoOutdoorMode" />
 
     <!-- Anti flicker mode / DC dimming -->
-    <lineageos.preference.PortalRomSystemSettingSwitchPreference
+    <portalrom.preference.PortalRomSystemSettingSwitchPreference
             android:key="display_anti_flicker"
             android:title="@string/live_display_anti_flicker_title"
             android:summary="@string/live_display_anti_flicker_summary"
             android:defaultValue="false" />
 
     <!-- Reading mode -->
-    <lineageos.preference.PortalRomSystemSettingSwitchPreference
+    <portalrom.preference.PortalRomSystemSettingSwitchPreference
             android:key="display_reading_mode"
             android:title="@string/live_display_reading_mode_title"
             android:summary="@string/live_display_reading_mode_summary"
@@ -69,7 +69,7 @@
             android:title="@string/advanced">
 
         <!-- RGB display color adjustments -->
-        <org.lineageos.lineageparts.livedisplay.DisplayColor
+        <org.portalrom.lineageparts.livedisplay.DisplayColor
                 android:key="color_calibration"
                 android:title="@string/color_calibration_title"
                 android:dialogTitle="@string/color_calibration_title"
@@ -77,7 +77,7 @@
                 android:persistent="false"/>
 
         <!-- HSIC display color adjustments -->
-        <org.lineageos.lineageparts.livedisplay.PictureAdjustment
+        <org.portalrom.lineageparts.livedisplay.PictureAdjustment
                 android:key="picture_adjustment"
                 android:title="@string/picture_adjustment_title"
                 android:dialogTitle="@string/picture_adjustment_title"
@@ -85,18 +85,18 @@
                 android:persistent="false"/>
 
         <!-- Adaptive backlight -->
-        <lineageos.preference.PortalRomSystemSettingSwitchPreference
+        <portalrom.preference.PortalRomSystemSettingSwitchPreference
                 android:key="display_low_power"
                 android:title="@string/live_display_low_power_title"
                 android:summary="@string/live_display_low_power_summary"
-                android:defaultValue="@*lineageos.platform:bool/config_defaultCABC" />
+                android:defaultValue="@*portalrom.platform:bool/config_defaultCABC" />
 
         <!-- Color enhancement -->
-        <lineageos.preference.PortalRomSystemSettingSwitchPreference
+        <portalrom.preference.PortalRomSystemSettingSwitchPreference
                 android:key="display_color_enhance"
                 android:title="@string/live_display_enhance_color_title"
                 android:summary="@string/live_display_enhance_color_summary"
-                android:defaultValue="@*lineageos.platform:bool/config_defaultColorEnhancement" />
+                android:defaultValue="@*portalrom.platform:bool/config_defaultColorEnhancement" />
 
     </PreferenceCategory>
 

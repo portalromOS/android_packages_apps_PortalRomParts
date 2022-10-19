@@ -16,7 +16,7 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <org.lineageos.lineageparts.widget.WallOfTextPreference
+    <org.portalrom.lineageparts.widget.WallOfTextPreference
         android:icon="@drawable/ic_trust"
         android:summary="@string/trust_onboarding_description" />
 
@@ -39,7 +39,7 @@
         android:key="trust_category_tools"
         android:title="@string/trust_category_tools">
 
-        <lineageos.preference.PortalRomGlobalSettingListPreference
+        <portalrom.preference.PortalRomGlobalSettingListPreference
             android:key="trust_restrict_usb"
             android:title="@string/trust_restrict_usb_title"
             android:summary="@string/trust_restrict_usb_summary"
@@ -47,7 +47,7 @@
             android:entryValues="@array/trust_restrict_usb_values"
             android:defaultValue="0" />
 
-        <org.lineageos.internal.lineageparts.PortalRomPartsPreference
+        <org.portalrom.internal.lineageparts.PortalRomPartsPreference
             android:key="lineagestats" />
 
         <ListPreference
@@ -63,7 +63,7 @@
         android:key="trust_category_warnings"
         android:title="@string/trust_notification_alerts_title">
 
-        <org.lineageos.lineageparts.widget.WallOfTextPreference
+        <org.portalrom.lineageparts.widget.WallOfTextPreference
             android:icon="@drawable/ic_info"
             android:summary="@string/trust_warnings_alerts_intro" />
 
