@@ -61,12 +61,12 @@ public class PlatLogoActivity extends Activity {
         private int mDarkest;
         private float mOffset;
 
-        // PortalRomOS logo drawable
+        // PortalRom logo drawable
         private final Drawable mLogo;
 
         public PBackground(Context context) {
             randomizePalette();
-            // PortalRomOS logo
+            // PortalRom logo
             mLogo = context.getResources().getDrawable(R.drawable.logo_portalrom, context.getTheme());
             mLogo.setColorFilter(new ColorMatrixColorFilter(WHITE)); // apply color filter
             mLogo.setBounds(0, 0, 360, 180); // Aspect ratio 2:1
@@ -198,7 +198,7 @@ public class PlatLogoActivity extends Activity {
             }
             canvas.restore();
 
-            // Draw PortalRomOS Logo drawable
+            // Draw PortalRom Logo drawable
             canvas.save();
             {
                 canvas.translate((-360 / 2f) * mRadius / BASE_SCALE,

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.portalromos.portalromparts.notificationlight;
+package org.portalrom.portalromparts.notificationlight;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -31,9 +31,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.preference.PreferenceViewHolder;
 
-import org.portalromos.internal.notification.LightsCapabilities;
-import org.portalromos.portalromparts.widget.CustomDialogPreference;
-import org.portalromos.portalromparts.R;
+import org.portalrom.internal.notification.LightsCapabilities;
+import org.portalrom.portalromparts.widget.CustomDialogPreference;
+import org.portalrom.portalromparts.R;
 
 public class ApplicationLightPreference extends CustomDialogPreference<LightSettingsDialog>
         implements View.OnLongClickListener {
